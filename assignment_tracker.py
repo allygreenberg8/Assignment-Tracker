@@ -68,8 +68,11 @@ class AssignmentTracker: #this class creates an object that can be used to track
             print("Invalid assignment number!")
 
 def main():
+    # Get semester from user
+    semester = input("Enter semester (e.g. Spring2025): ")
+    
     # Create instance of AssignmentTracker with a semester
-    tracker = AssignmentTracker("Fall2023")
+    tracker = AssignmentTracker(semester)
     
     print("\nNote: You can press Ctrl+C at any time to force exit the program")
     
